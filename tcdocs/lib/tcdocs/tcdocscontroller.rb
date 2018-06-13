@@ -1,4 +1,6 @@
 require_relative ."/lib/tcdocs"
+require 'nokogiri'
+require 'colorize'
 
 class TCDocs::TCDocsController
 
