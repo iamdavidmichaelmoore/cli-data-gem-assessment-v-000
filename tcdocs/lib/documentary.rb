@@ -1,6 +1,5 @@
 require_relative ."/lib/tcdocs"
 
-
 class Documentary
 
   attr_accessor :title, :year, :category :synopsis, :synopsis_url
