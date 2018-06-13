@@ -52,8 +52,8 @@ class TCDocs::TCDocsController
   end
 
   def list_documentaries_by_category(category)
-    documentaries = Category.all.detect {|c| c.downcase == category.downcase}
-    documentaries.each_with_index(1) do |doc, num|
+    docs_by_cat = Category.all.detect {|c| c.downcase == category.downcase}
+    docs_by_cat.each_with_index(1) do |doc, num|
       puts "#{num}." + " #{doc.title.upcase}.colorize(:blue)"
       puts "  Year:".colorize(:light_blue) +  "#{doc.year}"
       puts "  Category:".colorize(:light_blue) + " #{doc.category.name}"
