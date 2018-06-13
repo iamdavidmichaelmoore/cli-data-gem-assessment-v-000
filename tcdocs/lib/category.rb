@@ -1,0 +1,30 @@
+class Category
+  attr_accessor :name
+  attr_reader :documentaries
+
+  @@all = []
+
+  def initialize(name)
+    @name = name
+    @documentaries = []
+  end
+
+  def self.all
+    @@all
+  end
+
+  def save
+    self.clasls.all << self
+  end
+
+  def self.destroy_all
+    self.all.clear
+  end
+
+  def self.create(name)
+    category = self.new(name)
+    category.save
+    category
+  end
+    
+end

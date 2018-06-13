@@ -1,0 +1,3 @@
+#!/usr/bin/env ruby
+
+TCDocs::TCDocsController.new.run
