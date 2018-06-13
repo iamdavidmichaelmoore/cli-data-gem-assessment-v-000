@@ -1,3 +1,5 @@
+require_relative ."/lib/tcdocs"
+
 class TCDocs::TCDocsController
 
   attr_accessor :categories
