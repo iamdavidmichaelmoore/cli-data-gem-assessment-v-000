@@ -28,5 +28,5 @@ class Category
     category.save
     category
   end
-    
+
 end
