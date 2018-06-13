@@ -68,7 +68,6 @@ class TCDocs::TCDocsController
     @categories = []
   end
 
-  # Not my code.
   # Source: https://www.safaribooksonline.com/library/view/ruby-cookbook/0596523696/ch01s15.html
   def word_wrap(text, width=78)
     lines = []
