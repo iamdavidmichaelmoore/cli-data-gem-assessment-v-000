@@ -1,3 +1,5 @@
+require_relative ."/lib/tcdocs"
+
 class Category
   attr_accessor :name
   attr_reader :documentaries
