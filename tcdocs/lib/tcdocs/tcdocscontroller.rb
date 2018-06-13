@@ -22,8 +22,8 @@ class TCDocs::TCDocsController
       puts "  Category:".colorize(:light_blue) + " #{doc.category.name}"
       puts "\n"
       puts "  Synopsis:".colorize(:light_blue)
-      puts " #{word_wrap(synopsis)}"
-      puts "  Full synopsis URL:".colorize(:light_blue) + " #{synopsis_url}"
+      puts " #{word_wrap(doc.synopsis)}"
+      puts "  Full synopsis URL:".colorize(:light_blue) + " #{doc.synopsis_url}"
     end
   end
 
@@ -59,8 +59,8 @@ class TCDocs::TCDocsController
       puts "  Category:".colorize(:light_blue) + " #{doc.category.name}"
       puts "\n"
       puts "  Synopsis:".colorize(:light_blue)
-      puts " #{word_wrap(synopsis)}"
-      puts "  Full synopsis URL:".colorize(:light_blue) + " #{synopsis_url}"
+      puts " #{word_wrap(doc.synopsis)}"
+      puts "  Full synopsis URL:".colorize(:light_blue) + " #{doc.synopsis_url}"
     end
   end
 
